@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.allfont {
+    font-family: "Work Sans", sans-serif;
+  }
+/* dark2 */
+.tex-color{
+    color:#727272;
+    font-size: 15px;
+    
+}
+.dark2{
+    color: #424242;
+}
+.banerclor{
+    background-color: rgba(255, 144, 14, 0.10);
+}
+.btn-primery{
+    background-color: #FF900E;
+    color: #ffff;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    
+}
+/*  */
+main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+main>section{
+    margin-top: 130px;
+}
+/* style */
+
+.displayflex{
+    display: flex;
+}
+.navebar{
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+.brand{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+}
+.navebar, .banner{
+    max-width: 1440px;
+}
+.banner-content{
+    max-width: 855px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px
+}
+.banner-titele{
+    font-size: 4.3rem;
+    font-weight: bold;
+}
+.banner-dittelse{
+    font-size: 1rem;
+    font-family:sans-serif ;
+}
+.banner img{
+    max-width: 90%;
+    margin-left: 4.5%;
+    
+}
+/* main style */
+.time-continer{
+    align-items: center;
+    gap:100px;
+}
+.time-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 28px;
+}
+.span1{
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.5rem; 
+}
+.span2{
+    color: #f98808;
+    font-weight: 700;
+    font-size: 2.5rem; 
+}
+.span3{
+    font-weight: 700;
+    font-size: 2.5rem; 
+}
+.time-dicipson {
+   max-width: 570px;
+}
+.Facts-continer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    margin-left:40px;
+    gap: 50px;
+    margin-top: 80px;
+   
+}
+.facts-icon{
+    width: 140px;
+    height: 140px;
+    border: 2px solid #f98808;
+    padding: 50px;
+    text-align: center;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+}
+.facts-nub{
+    font-size: 2rem;
+    color:#424242;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.facts-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.some-discipson{
+    max-width: 540px;
+}
+
+
+
+
+
+
+
+
+/* hader responcive */
+@media screen and (max-width:576px){
+    .navebar,.navlist ,.time-continer{
+        flex-direction: column;
+    }
+    .time-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}
+@media screen and (min-width:576px) and (max-width:992px){
+    .time-continer{
+        flex-direction: column;
+    }
+}

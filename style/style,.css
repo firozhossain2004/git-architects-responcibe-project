@@ -99,6 +99,21 @@ main>section{
     display: flex;
     gap: 100px;
 }
+#card-bage{
+    padding: 45px 40px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-left: -90px;
+    margin-top: -120px;
+}
+.arcetex-imge img{
+    width: 100%;
+}
+#card-years{
+    font-size: 3rem;
+    font-weight: bold;
+}
 #cardeh2{
     margin-top: 7px;
     margin-bottom: 6px;
@@ -190,12 +205,16 @@ footer{
 
 /* hader responcive */
 @media screen and (max-width:576px){
-    .navebar,.navlist ,.time-continer ,.sponspors-logo{
+    .navebar,.navlist ,.time-continer ,.sponspors-logo ,.love-enjoy{
         flex-direction: column;
     }
     .time-img ,.facts-continer{
         grid-template-columns: repeat(1,1fr);
     }
+    .navlist{
+        margin-left: -300px;
+    }
+   
     .facts-continer{
        margin-left: 70px;
     }
@@ -203,15 +222,28 @@ footer{
        
        margin-bottom: 50px;
     }
+    #card-bage{
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+    footer h2{
+        font-size: 1rem;
+     text-align: center;
+       margin-left: -10px;
+    }
+    footer{
+       max-width: 100%;
+    }
     
 }
 @media screen and (min-width:576px) and (max-width:992px){
-    .time-continer{
+    .time-continer , .love-enjoy{
         flex-direction: column;
     }
     .facts-continer ,.sponspors-logo{
         grid-template-columns: repeat(2,1fr);
     }
+    
     .sponspors-logo{
         display: grid;
         grid-template-columns:repeat(3,1fr) ;
@@ -222,4 +254,16 @@ footer{
     .facts-continer{
         margin-left: 100px;
      }
+     #card-bage{
+        margin-top: 20px;
+        margin-left:30%;
+    }
+    footer h2{
+        font-size: 1rem;
+     text-align: center;
+       margin-left: -10px;
+    }
+    footer{
+       max-width: 100%;
+    }
 }
